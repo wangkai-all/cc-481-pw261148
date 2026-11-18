@@ -32,3 +32,7 @@ test-results/
 *.sqlite3-shm
 *.sqlite3-journal
 !*.traineddata.gz
+
+# DR drill runtime environments
+dr-home/
+dr-home-*/

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lakehouse-dr-drill"
+version = "1.0.0"
+description = "Local lakehouse disaster-recovery drill tool: file versions, metadata snapshots, CDC positions, quality gates, point-in-time recovery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "DR Drill" }]
+dependencies = []
+
+[project.scripts]
+dr-cli = "lakehouse_dr.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lakehouse_dr*"]
+
+[tool.setuptools.package-data]
+lakehouse_dr = ["static/*"]
